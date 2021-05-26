@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Neravenstva">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nerav1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"><![CDATA[
+
+        android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/verno1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.587"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65" />
+
+
+
+        ]]>
+
+        <RadioButton
+            android:id="@+id/verno1"
+            android:layout_width="77dp"
+            android:layout_height="91dp"
+            android:layout_marginBottom="60dp"
+            android:text="верно"
+            app:layout_constraintBottom_toTopOf="@+id/neverno1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/neverno1"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_marginBottom="228dp"
+            android:text="неверно"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/neravvenstvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/primmerchik"
+            app:layout_constraintBottom_toTopOf="@+id/verno1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/yrovni">
+
+    <fragment
+        android:id="@+id/yrovni"
+        android:name="com.example.schet.Yrovni"
+        android:label="yrovni"
+        tools:layout="@layout/yrovni" >
+        <action
+            android:id="@+id/yrovni_level1"
+            app:destination="@id/level1" />
+        <action
+            android:id="@+id/yrovni_level234"
+            app:destination="@id/level234" />
+    </fragment>
+    <fragment
+        android:id="@+id/level1"
+        android:name="com.example.schet.Level1"
+        android:label="level1"
+        tools:layout="@layout/level1" >
+        <action
+            android:id="@+id/level1_primkartinki"
+            app:destination="@id/primkartinki" />
+        <action
+            android:id="@+id/level1_chislovprim"
+            app:destination="@id/chislovprim" />
+        <action
+            android:id="@+id/level1_neravenstva"
+            app:destination="@id/neravenstva" />
+    </fragment>
+    <fragment
+        android:id="@+id/level234"
+        android:name="com.example.schet.Level234"
+        android:label="level234"
+        tools:layout="@layout/level234" >
+        <action
+            android:id="@+id/level234_21"
+            app:destination="@id/chislovprim21" />
+    </fragment>
+    <fragment
+        android:id="@+id/primkartinki"
+        android:name="com.example.schet.Primkartinki"
+        android:label="primkartinki"
+        tools:layout="@layout/primkartinki" >
+        <action
+            android:id="@+id/action_primkartinki_to_kart"
+            app:destination="@id/kart" />
+        <action
+            android:id="@+id/action_primkartinki_to_ttt"
+            app:destination="@id/ttt" />
+    </fragment>
+    <fragment
+        android:id="@+id/neravenstva"
+        android:name="com.example.schet.Neravenstva"
+        android:label="neravenstva"
+        tools:layout="@layout/neravenstva" >
+        <action
+            android:id="@+id/action_neravenstva_to_ne"
+            app:destination="@id/ne" />
+        <action
+            android:id="@+id/action_neravenstva_to_ve"
+            app:destination="@id/ve" />
+    </fragment>
+    <fragment
+        android:id="@+id/chislovprim"
+        android:name="com.example.schet.Chislovprim"
+        android:label="chislovprim"
+        tools:layout="@layout/chislovprim" >
+        <action
+            android:id="@+id/action_chislovprim_to_verno"
+            app:destination="@id/verno" />
+        <action
+            android:id="@+id/action_chislovprim_to_neverno"
+            app:destination="@id/neverno" />
+    </fragment>
+    <fragment
+        android:id="@+id/neverno"
+        android:name="com.example.schet.Neverno"
+        android:label="neverno"
+        tools:layout="@layout/neverno" />
+    <fragment
+        android:id="@+id/verno"
+        android:name="com.example.schet.Verno"
+        android:label="verno"
+        tools:layout="@layout/verno" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.schet.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/chislovprim21"
+        android:name="com.example.schet.Chislovprim21"
+        android:label="chislovprim21"
+        tools:layout="@layout/chislovprim21" />
+    <fragment
+        android:id="@+id/primkart"
+        android:name="com.example.schet.Primkart"
+        android:label="primkart"
+        tools:layout="@layout/primkart" >
+        <action
+            android:id="@+id/action_primkart_to_kar"
+            app:destination="@id/kar" />
+        <action
+            android:id="@+id/action_primkart_to_nev2"
+            app:destination="@id/nev2" />
+    </fragment>
+    <fragment
+        android:id="@+id/kart"
+        android:name="com.example.schet.Kart"
+        android:label="kart"
+        tools:layout="@layout/kart" >
+        <action
+            android:id="@+id/action_kart_to_primkart"
+            app:destination="@id/primkart" />
+    </fragment>
+    <fragment
+        android:id="@+id/kar"
+        android:name="com.example.schet.Kar"
+        android:label="kar"
+        tools:layout="@layout/kar" >
+        <action
+            android:id="@+id/action_kar_to_kaarttt"
+            app:destination="@id/kaarttt" />
+    </fragment>
+    <fragment
+        android:id="@+id/nev2"
+        android:name="com.example.schet.Nev"
+        android:label="nev"
+        tools:layout="@layout/nev" >
+        <action
+            android:id="@+id/action_nev2_to_kaarttt"
+            app:destination="@id/kaarttt" />
+    </fragment>
+    <fragment
+        android:id="@+id/ttt"
+        android:name="com.example.schet.Ttt"
+        android:label="ttt"
+        tools:layout="@layout/ttt" >
+        <action
+            android:id="@+id/action_ttt_to_primkart"
+            app:destination="@id/primkart" />
+    </fragment>
+    <fragment
+        android:id="@+id/ne"
+        android:name="com.example.schet.Ne"
+        android:label="ne"
+        tools:layout="@layout/ne" />
+    <fragment
+        android:id="@+id/ve"
+        android:name="com.example.schet.Ve"
+        android:label="ve"
+        tools:layout="@layout/ve" />
+    <fragment
+        android:id="@+id/kaarttt"
+        android:name="com.example.schet.Kaarttt"
+        android:label="kaarttt"
+        tools:layout="@layout/kaarttt" />
+</navigation>

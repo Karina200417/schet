@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Primkartinki">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ravno"
+            android:layout_width="99dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="72dp"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/otvet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="99dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:text="+"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/im2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="120dp"
+            android:layout_height="118dp"
+            android:src="@drawable/grushaaa"
+            app:layout_constraintBottom_toTopOf="@+id/plus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="141dp"
+            android:layout_height="148dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/yablochhhhko"
+            app:layout_constraintBottom_toTopOf="@+id/ravno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/proverka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="проверка"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/otvet"
+            android:layout_width="96dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="40dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/proverka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
